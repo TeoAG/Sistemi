@@ -1,0 +1,18 @@
+il livello di sessione si occupa di garantire la connessione anche se i livelli sotto cambiano.
+Il livello di presentazione crea l'interfaccia dei livelli sottostanti e si occupa della ricostruzione dei dati li comprime o li cripta.
+il livello applicazione fa da interfaccia tra software e rete(accoglie i dati e li da all'utente dopo averli trsformati)
+primi tre livelli, gestiti dal SO
+ultimi tre livelli gestiti da Programmatore
+in Ethernt si usa la codifica di Manchester, per diminuire gli errori
+
+802.3: implementazione della frame ethernet a livello DataLink
+Frame: Preambolo 7Bite sono composti da 8 bit: 10101010
+il preambolo lo usiamo per sincronizzare tutte le stazioni che possono essere ripetitori o host
+SOF: ultimo byte fatto: 10101011
+destin.addres: mac address destinatario
+source: mac address sorgente
+l'unica differenza tra Ethernet e 802.3 eè il campo type e il campo lenght, il capo type dice che tipo di paccheto è e il campo lenght la lunghezza del pacchetto
+FCS: implementa il CRC 32 e viene implementato il polinomio generatore.
+l'802.3 implmenta il messaggio di ricerca: L'ARP che si occupa di trasformare gli IP in indirizzi MAC
+Frame 802.11
+lavora tramite etere essendo la frame del wi-fi
