@@ -16,3 +16,7 @@ FCS: implementa il CRC 32 e viene implementato il polinomio generatore.
 l'802.3 implmenta il messaggio di ricerca: L'ARP che si occupa di trasformare gli IP in indirizzi MAC
 Frame 802.11
 lavora tramite etere essendo la frame del wi-fi
+commutazione a circuito tutti i nodi intermedi garantiscono la trasmissione dei pacchetti
+RTT tempo di scambio(round trip time)
+ogni volta che ho mandato un pacchetto si metto un time-out e aspetto l'ack, arrivato l'ack tolgo il pacchetto corrispondente dal buffer
+mantengo una area di salvaguardia per evitare duplicazioni, e un area di valenza
