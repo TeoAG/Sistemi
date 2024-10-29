@@ -10,7 +10,6 @@ typedef struct {
 
 void put(round_buffer_t* buffer, uint8_t* data) {
     if ((buffer->head + 1) % BUFFER_SIZE == buffer->tail) {
-        
     } else {
         buffer->data[buffer->head] = *data;
         buffer->head = (buffer->head + 1) % BUFFER_SIZE;
@@ -19,7 +18,6 @@ void put(round_buffer_t* buffer, uint8_t* data) {
 
 uint8_t get(round_buffer_t* buffer) {
     if (buffer->head == buffer->tail) {
-        
     } else {
         uint8_t data = buffer->data[buffer->tail];
         buffer->tail = (buffer->tail + 1) % BUFFER_SIZE;
